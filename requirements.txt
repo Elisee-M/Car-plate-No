@@ -2,4 +2,6 @@ flask
 flask-cors
 gunicorn
 numpy==1.26.4
-torch==2.5.1          # first 3.11-compatible LTS
+torch==2.5.1
+ultralytics==8.3.40      # or latest 8.x
+opencv-python==4.10.0.84
