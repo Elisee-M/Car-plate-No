@@ -1,10 +1,7 @@
 flask
-flask-cors
-ultralytics==8.1.34
-easyocr
+gunicorn
+numpy==1.26.4
+torch==2.0.1
 opencv-python-headless
-numpy<2.0
-
-torch==2.0.1+cpu
-torchvision==0.15.2+cpu
---extra-index-url https://download.pytorch.org/whl/cpu
+easyocr
+ultralytics
