@@ -2,7 +2,4 @@ flask
 flask-cors
 gunicorn
 numpy==1.26.4
-torch==2.0.1
-opencv-python-headless
-easyocr
-ultralytics
+torch==2.5.1          # first 3.11-compatible LTS
