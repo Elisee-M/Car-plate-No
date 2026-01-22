@@ -1,7 +1,7 @@
 const imageInput = document.getElementById("imageInput");
 const detectBtn = document.getElementById("detectBtn");
-const result = document.getElementById("result");
-const statusText = document.getElementById("status");
+const result    = document.getElementById("result");
+const statusText= document.getElementById("status");
 
 detectBtn.onclick = async () => {
   if (!imageInput.files || imageInput.files.length === 0) {
@@ -16,7 +16,8 @@ detectBtn.onclick = async () => {
   formData.append("image", imageInput.files[0]);
 
   try {
-    const response = await fetch("http://localhost:5000/detect", {
+    // use relative path so it works both locally and on Render
+    const response = await fetch("/detect", {
       method: "POST",
       body: formData
     });
