@@ -28,7 +28,11 @@ def load_models():
         print("YOLO model loaded ✅")
     if ocr_reader is None:
         print("Loading EasyOCR reader...")
-        ocr_reader = easyocr.Reader(['en'])
+        ocr_reader = easyocr.Reader(
+            ['en'],
+            model_storage_directory='./models/easyocr/model',
+            download_enabled=False
+        )
         print("EasyOCR reader loaded ✅")
 
 def preprocess_plate(img, scale=3):
