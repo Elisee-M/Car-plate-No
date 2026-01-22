@@ -4,3 +4,4 @@ gunicorn
 torch
 torchvision
 ultralytics
+easyocr
